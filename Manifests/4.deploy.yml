@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: webapps
   name: yelp-camp-deployment
 spec:
   replicas: 2
