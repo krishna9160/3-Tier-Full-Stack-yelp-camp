@@ -2,8 +2,9 @@ apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
   name: yelp-camp-pdb
+  namespace: webapps
 spec:
-  minAvailable: 2
+  minAvailable: 1
   selector:
     matchLabels:
       app: yelp-camp
